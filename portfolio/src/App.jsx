@@ -23,6 +23,7 @@ import googleAiCert from "./assets/google-ai-ml-cert.pdf";
 
 import paloAltoLogo from "./assets/paloalto.png";
 import paloAltoCert from "./assets/paloalto-cybersecurity-cert.pdf";
+import profilePhoto from "./assets/photo.jpg";
 function App() {
   return (
     <div
@@ -90,6 +91,22 @@ function App() {
         }}
       >
         <div style={mainGlassCard}>
+          <div style={{ display: "flex", justifyContent: "center", marginBottom: 18 }}>
+            <img
+              src={profilePhoto}
+              alt="Profile"
+              style={{
+                width: 200,
+                height: 200,
+                borderRadius: "50%",
+                objectFit: "cover",
+                objectPosition: "center 15%",
+                filter: "contrast(1.08) saturate(1.05)",
+                border: "4px solid rgba(34,211,238,0.22)",
+                boxShadow: "0 14px 40px rgba(0, 0, 0, 0.35)",
+              }}
+            />
+          </div>
           <h1
             style={{
               fontSize: "70px",
@@ -881,8 +898,9 @@ function Card({ title, text }) {
 /* STYLES */
 
 const linkStyle = {
-  color: "white",
+  color: "#22d3ee",
   textDecoration: "none",
+  transition: "color 0.18s ease",
 };
 
 const buttonStyle = {
