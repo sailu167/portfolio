@@ -149,7 +149,7 @@ function App() {
               flexWrap: "wrap",
             }}
           >
-            <a href="/portfolio/resume.pdf" download style={buttonStyle}>
+            <a href="/portfolio/resume.pdf" target="_blank" rel="noopener noreferrer" style={buttonStyle}>
               Download Resume
             </a>
 
